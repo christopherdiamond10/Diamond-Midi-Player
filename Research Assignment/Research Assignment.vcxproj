@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{63FCA073-887B-46AC-92DD-B44A0FA0916F}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ResearchAssignment</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>./Bin/</OutDir>
+    <IntDir>./Obj/</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>./Include/;./Include/FMOD/;./Include/FreeImage/;./Include/GLEW/;./Include/GLFW/;./Include/Midi Input Library/;./Include/TinyXML/</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Comdlg32.lib;Ole32.lib;FreeImaged.lib;glew32s.lib;GLFW.lib;fmodex_vc.lib;winmm.lib;opengl32.lib;user32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>./Libs/FMOD/;./Libs/FreeImage/;./Libs/GLEW/;./Libs/GLFW/</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>./Include/;./Include/FMOD/;./Include/FreeImage/;./Include/GLEW/;./Include/GLFW/;./Include/Midi Input Library/;./Include/TinyXML/</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>Comdlg32.lib;Ole32.lib;FreeImage.lib;glew32s.lib;GLFW.lib;fmodex_vc.lib;winmm.lib;opengl32.lib;user32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>./Libs/FMOD/;./Libs/FreeImage/;./Libs/GLEW/;./Libs/GLFW/</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Include\JDKsMidi\jdksmidi_advancedsequencer.cpp" />
+    <ClCompile Include="Include\JDKsMidi\jdksmidi_driver.cpp" />
+    <ClCompile Include="Include\JDKsMidi\jdksmidi_driverdump.cpp" />
+    <ClCompile Include="Include\JDKsMidi\jdksmidi_edittrack.cpp" />
+    <ClCompile Include="Include\JDKsMidi\jdksmidi_file.cpp" />
+    <ClCompile Include="Include\JDKsMidi\jdksmidi_fileread.cpp" />
+    <ClCompile Include="Include\JDKsMidi\jdksmidi_filereadmultitrack.cpp" />
+    <ClCompile Include="Include\JDKsMidi\jdksmidi_fileshow.cpp" />
+    <ClCompile Include="Include\JDKsMidi\jdksmidi_filewrite.cpp" />
+    <ClCompile Include="Include\JDKsMidi\jdksmidi_filewritemultitrack.cpp" />
+    <ClCompile Include="Include\JDKsMidi\jdksmidi_keysig.cpp" />
+    <ClCompile Include="Include\JDKsMidi\jdksmidi_manager.cpp" />
+    <ClCompile Include="Include\JDKsMidi\jdksmidi_matrix.cpp" />
+    <ClCompile Include="Include\JDKsMidi\jdksmidi_midi.cpp" />
+    <ClCompile Include="Include\JDKsMidi\jdksmidi_msg.cpp" />
+    <ClCompile Include="Include\JDKsMidi\jdksmidi_multitrack.cpp" />
+    <ClCompile Include="Include\JDKsMidi\jdksmidi_parser.cpp" />
+    <ClCompile Include="Include\JDKsMidi\jdksmidi_process.cpp" />
+    <ClCompile Include="Include\JDKsMidi\jdksmidi_queue.cpp" />
+    <ClCompile Include="Include\JDKsMidi\jdksmidi_sequencer.cpp" />
+    <ClCompile Include="Include\JDKsMidi\jdksmidi_showcontrol.cpp" />
+    <ClCompile Include="Include\JDKsMidi\jdksmidi_showcontrolhandler.cpp" />
+    <ClCompile Include="Include\JDKsMidi\jdksmidi_smpte.cpp" />
+    <ClCompile Include="Include\JDKsMidi\jdksmidi_sysex.cpp" />
+    <ClCompile Include="Include\JDKsMidi\jdksmidi_tempo.cpp" />
+    <ClCompile Include="Include\JDKsMidi\jdksmidi_tick.cpp" />
+    <ClCompile Include="Include\JDKsMidi\jdksmidi_track.cpp" />
+    <ClCompile Include="Include\JDKsMidi\jdksmidi_utils.cpp" />
+    <ClCompile Include="Include\Midi Input Library\MidiInput.cpp" />
+    <ClCompile Include="Include\Midi Input Library\MidiDevice.cpp" />
+    <ClCompile Include="Include\TinyXML\tinystr.cpp" />
+    <ClCompile Include="Include\TinyXML\tinyxml.cpp" />
+    <ClCompile Include="Include\TinyXML\tinyxmlerror.cpp" />
+    <ClCompile Include="Include\TinyXML\tinyxmlparser.cpp" />
+    <ClCompile Include="Source\AudioManager.cpp" />
+    <ClCompile Include="Source\DeltaTime.cpp" />
+    <ClCompile Include="Source\FontManager.cpp" />
+    <ClCompile Include="Source\GameEngine.cpp" />
+    <ClCompile Include="Source\HelperClasses.cpp" />
+    <ClCompile Include="Source\InputHandler.cpp" />
+    <ClCompile Include="Source\KeyboardDrawSystem.cpp" />
+    <ClCompile Include="Source\KeyboardKeySprite.cpp" />
+    <ClCompile Include="Source\main.cpp" />
+    <ClCompile Include="Source\MidiInputHandler.cpp" />
+    <ClCompile Include="Source\MidiSequencer.cpp" />
+    <ClCompile Include="Source\RenderQuad.cpp" />
+    <ClCompile Include="Source\SceneManager.cpp" />
+    <ClCompile Include="Source\Scene_MidiOptions.cpp" />
+    <ClCompile Include="Source\Scene_PlayGame.cpp" />
+    <ClCompile Include="Source\Scene_Select.cpp" />
+    <ClCompile Include="Source\Screen.cpp" />
+    <ClCompile Include="Source\TextureLoader.cpp" />
+    <ClCompile Include="Source\UIButton.cpp" />
+    <ClCompile Include="Source\XMLHandler.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Include\AudioManager.h" />
+    <ClInclude Include="Include\DeltaTime.h" />
+    <ClInclude Include="Include\EditableOptions.h" />
+    <ClInclude Include="Include\FMOD\fmod.h" />
+    <ClInclude Include="Include\FMOD\fmod.hpp" />
+    <ClInclude Include="Include\FMOD\fmod_codec.h" />
+    <ClInclude Include="Include\FMOD\fmod_dsp.h" />
+    <ClInclude Include="Include\FMOD\fmod_memoryinfo.h" />
+    <ClInclude Include="Include\FontManager.h" />
+    <ClInclude Include="Include\FreeImage\FreeImage.h" />
+    <ClInclude Include="Include\GameEngine.h" />
+    <ClInclude Include="Include\GLEW\glew.h" />
+    <ClInclude Include="Include\GLEW\glxew.h" />
+    <ClInclude Include="Include\GLEW\wglew.h" />
+    <ClInclude Include="Include\GLFW\glfw.h" />
+    <ClInclude Include="Include\HelperFunctions.h" />
+    <ClInclude Include="Include\InputHandler.h" />
+    <ClInclude Include="Include\JDKsMidi\advancedsequencer.h" />
+    <ClInclude Include="Include\JDKsMidi\driver.h" />
+    <ClInclude Include="Include\JDKsMidi\driverdump.h" />
+    <ClInclude Include="Include\JDKsMidi\driverwin32.h" />
+    <ClInclude Include="Include\JDKsMidi\edittrack.h" />
+    <ClInclude Include="Include\JDKsMidi\file.h" />
+    <ClInclude Include="Include\JDKsMidi\fileread.h" />
+    <ClInclude Include="Include\JDKsMidi\filereadmultitrack.h" />
+    <ClInclude Include="Include\JDKsMidi\fileshow.h" />
+    <ClInclude Include="Include\JDKsMidi\filewrite.h" />
+    <ClInclude Include="Include\JDKsMidi\filewritemultitrack.h" />
+    <ClInclude Include="Include\JDKsMidi\keysig.h" />
+    <ClInclude Include="Include\JDKsMidi\manager.h" />
+    <ClInclude Include="Include\JDKsMidi\matrix.h" />
+    <ClInclude Include="Include\JDKsMidi\midi.h" />
+    <ClInclude Include="Include\JDKsMidi\msg.h" />
+    <ClInclude Include="Include\JDKsMidi\multitrack.h" />
+    <ClInclude Include="Include\JDKsMidi\parser.h" />
+    <ClInclude Include="Include\JDKsMidi\process.h" />
+    <ClInclude Include="Include\JDKsMidi\queue.h" />
+    <ClInclude Include="Include\JDKsMidi\sequencer.h" />
+    <ClInclude Include="Include\JDKsMidi\showcontrol.h" />
+    <ClInclude Include="Include\JDKsMidi\showcontrolhandler.h" />
+    <ClInclude Include="Include\JDKsMidi\smpte.h" />
+    <ClInclude Include="Include\JDKsMidi\song.h" />
+    <ClInclude Include="Include\JDKsMidi\sysex.h" />
+    <ClInclude Include="Include\JDKsMidi\tempo.h" />
+    <ClInclude Include="Include\JDKsMidi\tick.h" />
+    <ClInclude Include="Include\JDKsMidi\track.h" />
+    <ClInclude Include="Include\JDKsMidi\utils.h" />
+    <ClInclude Include="Include\JDKsMidi\world.h" />
+    <ClInclude Include="Include\KeyboardDrawSystem.h" />
+    <ClInclude Include="Include\KeyboardInformation.h" />
+    <ClInclude Include="Include\KeyboardKeySprite.h" />
+    <ClInclude Include="Include\RenderQuad.h" />
+    <ClInclude Include="Include\MathHelper.h" />
+    <ClInclude Include="Include\Midi Input Library\MidiInput.h" />
+    <ClInclude Include="Include\Midi Input Library\MidiDevice.h" />
+    <ClInclude Include="Include\MidiInputhandler.h" />
+    <ClInclude Include="Include\MidiSequencer.h" />
+    <ClInclude Include="Include\SceneManager.h" />
+    <ClInclude Include="Include\Scene_Base.h" />
+    <ClInclude Include="Include\Scene_MidiOptions.h" />
+    <ClInclude Include="Include\Scene_PlayGame.h" />
+    <ClInclude Include="Include\Scene_Select.h" />
+    <ClInclude Include="Include\Screen.h" />
+    <ClInclude Include="Include\TextureLoader.h" />
+    <ClInclude Include="Include\HelperClasses.h" />
+    <ClInclude Include="Include\TinyXML\TinySTR.h" />
+    <ClInclude Include="Include\TinyXML\TinyXML.h" />
+    <ClInclude Include="Include\UIButton.h" />
+    <ClInclude Include="Include\XMLHandler.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

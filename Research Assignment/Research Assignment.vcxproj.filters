@@ -1,0 +1,435 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Libraries">
+      <UniqueIdentifier>{364ee240-ff8b-4c08-89a9-e187f9461138}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libraries\TinyXML">
+      <UniqueIdentifier>{67e90135-dd9d-4233-bac7-0563da8459d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libraries\FMOD">
+      <UniqueIdentifier>{8f2cb766-461b-4ac5-860e-c0ecf0e46982}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libraries\GLEW">
+      <UniqueIdentifier>{cd1ed3e7-6f26-4a49-94a3-d440b9a9d45c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libraries\GLFW">
+      <UniqueIdentifier>{b48c37e1-a3f4-46ea-a3f4-27f562e3b294}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libraries\FreeImage">
+      <UniqueIdentifier>{77110cff-c189-4e3c-8db3-ac6447f23510}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libraries\JDKsMidi">
+      <UniqueIdentifier>{c150c272-48d9-438c-9d4f-18d1a628f60a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libraries\Midi Input Library">
+      <UniqueIdentifier>{ae904340-59b0-4380-9287-5009943ddcf3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Render Objects">
+      <UniqueIdentifier>{3f9fb7f8-90a1-4eb1-9347-f51fbf699f30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Render Objects">
+      <UniqueIdentifier>{3a15808f-88b0-44a8-b18a-e751cbb5c9f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Managers &amp; Handlers">
+      <UniqueIdentifier>{c8d8f0be-a2fa-4bd6-8435-9b48f0d0f547}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Managers &amp; Handlers">
+      <UniqueIdentifier>{22417716-6cb5-416d-8286-668431808097}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libraries\Font Library">
+      <UniqueIdentifier>{fe9e1bc0-bb5f-4c96-a947-c78ab9b2619a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Scenes">
+      <UniqueIdentifier>{067fa246-1074-4393-b97c-c395a5fe8900}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scenes">
+      <UniqueIdentifier>{09921f84-cdcd-44a6-afeb-f3730a66ca89}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Include\TinyXML\tinystr.cpp">
+      <Filter>Libraries\TinyXML</Filter>
+    </ClCompile>
+    <ClCompile Include="Include\TinyXML\tinyxml.cpp">
+      <Filter>Libraries\TinyXML</Filter>
+    </ClCompile>
+    <ClCompile Include="Include\TinyXML\tinyxmlerror.cpp">
+      <Filter>Libraries\TinyXML</Filter>
+    </ClCompile>
+    <ClCompile Include="Include\TinyXML\tinyxmlparser.cpp">
+      <Filter>Libraries\TinyXML</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GameEngine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Include\Midi Input Library\MidiDevice.cpp">
+      <Filter>Libraries\Midi Input Library</Filter>
+    </ClCompile>
+    <ClCompile Include="Include\Midi Input Library\MidiInput.cpp">
+      <Filter>Libraries\Midi Input Library</Filter>
+    </ClCompile>
+    <ClCompile Include="Include\JDKsMidi\jdksmidi_driverdump.cpp">
+      <Filter>Libraries\JDKsMidi</Filter>
+    </ClCompile>
+    <ClCompile Include="Include\JDKsMidi\jdksmidi_filereadmultitrack.cpp">
+      <Filter>Libraries\JDKsMidi</Filter>
+    </ClCompile>
+    <ClCompile Include="Include\JDKsMidi\jdksmidi_manager.cpp">
+      <Filter>Libraries\JDKsMidi</Filter>
+    </ClCompile>
+    <ClCompile Include="Include\JDKsMidi\jdksmidi_driver.cpp">
+      <Filter>Libraries\JDKsMidi</Filter>
+    </ClCompile>
+    <ClCompile Include="Include\JDKsMidi\jdksmidi_file.cpp">
+      <Filter>Libraries\JDKsMidi</Filter>
+    </ClCompile>
+    <ClCompile Include="Include\JDKsMidi\jdksmidi_fileread.cpp">
+      <Filter>Libraries\JDKsMidi</Filter>
+    </ClCompile>
+    <ClCompile Include="Include\JDKsMidi\jdksmidi_midi.cpp">
+      <Filter>Libraries\JDKsMidi</Filter>
+    </ClCompile>
+    <ClCompile Include="Include\JDKsMidi\jdksmidi_msg.cpp">
+      <Filter>Libraries\JDKsMidi</Filter>
+    </ClCompile>
+    <ClCompile Include="Include\JDKsMidi\jdksmidi_multitrack.cpp">
+      <Filter>Libraries\JDKsMidi</Filter>
+    </ClCompile>
+    <ClCompile Include="Include\JDKsMidi\jdksmidi_sequencer.cpp">
+      <Filter>Libraries\JDKsMidi</Filter>
+    </ClCompile>
+    <ClCompile Include="Include\JDKsMidi\jdksmidi_sysex.cpp">
+      <Filter>Libraries\JDKsMidi</Filter>
+    </ClCompile>
+    <ClCompile Include="Include\JDKsMidi\jdksmidi_tick.cpp">
+      <Filter>Libraries\JDKsMidi</Filter>
+    </ClCompile>
+    <ClCompile Include="Include\JDKsMidi\jdksmidi_matrix.cpp">
+      <Filter>Libraries\JDKsMidi</Filter>
+    </ClCompile>
+    <ClCompile Include="Include\JDKsMidi\jdksmidi_process.cpp">
+      <Filter>Libraries\JDKsMidi</Filter>
+    </ClCompile>
+    <ClCompile Include="Include\JDKsMidi\jdksmidi_queue.cpp">
+      <Filter>Libraries\JDKsMidi</Filter>
+    </ClCompile>
+    <ClCompile Include="Include\JDKsMidi\jdksmidi_track.cpp">
+      <Filter>Libraries\JDKsMidi</Filter>
+    </ClCompile>
+    <ClCompile Include="Include\JDKsMidi\jdksmidi_tempo.cpp">
+      <Filter>Libraries\JDKsMidi</Filter>
+    </ClCompile>
+    <ClCompile Include="Include\JDKsMidi\jdksmidi_advancedsequencer.cpp">
+      <Filter>Libraries\JDKsMidi</Filter>
+    </ClCompile>
+    <ClCompile Include="Include\JDKsMidi\jdksmidi_edittrack.cpp">
+      <Filter>Libraries\JDKsMidi</Filter>
+    </ClCompile>
+    <ClCompile Include="Include\JDKsMidi\jdksmidi_fileshow.cpp">
+      <Filter>Libraries\JDKsMidi</Filter>
+    </ClCompile>
+    <ClCompile Include="Include\JDKsMidi\jdksmidi_filewrite.cpp">
+      <Filter>Libraries\JDKsMidi</Filter>
+    </ClCompile>
+    <ClCompile Include="Include\JDKsMidi\jdksmidi_filewritemultitrack.cpp">
+      <Filter>Libraries\JDKsMidi</Filter>
+    </ClCompile>
+    <ClCompile Include="Include\JDKsMidi\jdksmidi_keysig.cpp">
+      <Filter>Libraries\JDKsMidi</Filter>
+    </ClCompile>
+    <ClCompile Include="Include\JDKsMidi\jdksmidi_parser.cpp">
+      <Filter>Libraries\JDKsMidi</Filter>
+    </ClCompile>
+    <ClCompile Include="Include\JDKsMidi\jdksmidi_showcontrol.cpp">
+      <Filter>Libraries\JDKsMidi</Filter>
+    </ClCompile>
+    <ClCompile Include="Include\JDKsMidi\jdksmidi_showcontrolhandler.cpp">
+      <Filter>Libraries\JDKsMidi</Filter>
+    </ClCompile>
+    <ClCompile Include="Include\JDKsMidi\jdksmidi_smpte.cpp">
+      <Filter>Libraries\JDKsMidi</Filter>
+    </ClCompile>
+    <ClCompile Include="Include\JDKsMidi\jdksmidi_utils.cpp">
+      <Filter>Libraries\JDKsMidi</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Screen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\RenderQuad.cpp">
+      <Filter>Source Files\Render Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\TextureLoader.cpp">
+      <Filter>Source Files\Render Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\KeyboardKeySprite.cpp">
+      <Filter>Source Files\Render Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\AudioManager.cpp">
+      <Filter>Source Files\Managers &amp; Handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DeltaTime.cpp">
+      <Filter>Source Files\Managers &amp; Handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\InputHandler.cpp">
+      <Filter>Source Files\Managers &amp; Handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\MidiInputHandler.cpp">
+      <Filter>Source Files\Managers &amp; Handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\SceneManager.cpp">
+      <Filter>Source Files\Managers &amp; Handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\XMLHandler.cpp">
+      <Filter>Source Files\Managers &amp; Handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\KeyboardDrawSystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\HelperClasses.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\FontManager.cpp">
+      <Filter>Source Files\Managers &amp; Handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene_PlayGame.cpp">
+      <Filter>Source Files\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene_Select.cpp">
+      <Filter>Source Files\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\UIButton.cpp">
+      <Filter>Source Files\Render Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene_MidiOptions.cpp">
+      <Filter>Source Files\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\MidiSequencer.cpp">
+      <Filter>Source Files\Managers &amp; Handlers</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Include\GameEngine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\HelperFunctions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\MathHelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\TinyXML\TinySTR.h">
+      <Filter>Libraries\TinyXML</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\TinyXML\TinyXML.h">
+      <Filter>Libraries\TinyXML</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\FMOD\fmod.h">
+      <Filter>Libraries\FMOD</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\FMOD\fmod.hpp">
+      <Filter>Libraries\FMOD</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\FMOD\fmod_codec.h">
+      <Filter>Libraries\FMOD</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\FMOD\fmod_dsp.h">
+      <Filter>Libraries\FMOD</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\FMOD\fmod_memoryinfo.h">
+      <Filter>Libraries\FMOD</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GLEW\glew.h">
+      <Filter>Libraries\GLEW</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GLEW\glxew.h">
+      <Filter>Libraries\GLEW</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GLEW\wglew.h">
+      <Filter>Libraries\GLEW</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GLFW\glfw.h">
+      <Filter>Libraries\GLFW</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\FreeImage\FreeImage.h">
+      <Filter>Libraries\FreeImage</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Midi Input Library\MidiDevice.h">
+      <Filter>Libraries\Midi Input Library</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Midi Input Library\MidiInput.h">
+      <Filter>Libraries\Midi Input Library</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\JDKsMidi\driverdump.h">
+      <Filter>Libraries\JDKsMidi</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\JDKsMidi\filereadmultitrack.h">
+      <Filter>Libraries\JDKsMidi</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\JDKsMidi\manager.h">
+      <Filter>Libraries\JDKsMidi</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\JDKsMidi\world.h">
+      <Filter>Libraries\JDKsMidi</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\JDKsMidi\driver.h">
+      <Filter>Libraries\JDKsMidi</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\JDKsMidi\file.h">
+      <Filter>Libraries\JDKsMidi</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\JDKsMidi\fileread.h">
+      <Filter>Libraries\JDKsMidi</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\JDKsMidi\midi.h">
+      <Filter>Libraries\JDKsMidi</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\JDKsMidi\msg.h">
+      <Filter>Libraries\JDKsMidi</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\JDKsMidi\multitrack.h">
+      <Filter>Libraries\JDKsMidi</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\JDKsMidi\sequencer.h">
+      <Filter>Libraries\JDKsMidi</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\JDKsMidi\sysex.h">
+      <Filter>Libraries\JDKsMidi</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\JDKsMidi\tick.h">
+      <Filter>Libraries\JDKsMidi</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\JDKsMidi\utils.h">
+      <Filter>Libraries\JDKsMidi</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\JDKsMidi\matrix.h">
+      <Filter>Libraries\JDKsMidi</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\JDKsMidi\process.h">
+      <Filter>Libraries\JDKsMidi</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\JDKsMidi\queue.h">
+      <Filter>Libraries\JDKsMidi</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\JDKsMidi\track.h">
+      <Filter>Libraries\JDKsMidi</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\JDKsMidi\tempo.h">
+      <Filter>Libraries\JDKsMidi</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\JDKsMidi\advancedsequencer.h">
+      <Filter>Libraries\JDKsMidi</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\JDKsMidi\driverwin32.h">
+      <Filter>Libraries\JDKsMidi</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\JDKsMidi\edittrack.h">
+      <Filter>Libraries\JDKsMidi</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\JDKsMidi\fileshow.h">
+      <Filter>Libraries\JDKsMidi</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\JDKsMidi\filewrite.h">
+      <Filter>Libraries\JDKsMidi</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\JDKsMidi\filewritemultitrack.h">
+      <Filter>Libraries\JDKsMidi</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\JDKsMidi\keysig.h">
+      <Filter>Libraries\JDKsMidi</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\JDKsMidi\parser.h">
+      <Filter>Libraries\JDKsMidi</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\JDKsMidi\showcontrol.h">
+      <Filter>Libraries\JDKsMidi</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\JDKsMidi\showcontrolhandler.h">
+      <Filter>Libraries\JDKsMidi</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\JDKsMidi\smpte.h">
+      <Filter>Libraries\JDKsMidi</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\JDKsMidi\song.h">
+      <Filter>Libraries\JDKsMidi</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Screen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\RenderQuad.h">
+      <Filter>Header Files\Render Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\TextureLoader.h">
+      <Filter>Header Files\Render Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\KeyboardKeySprite.h">
+      <Filter>Header Files\Render Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\XMLHandler.h">
+      <Filter>Header Files\Managers &amp; Handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\SceneManager.h">
+      <Filter>Header Files\Managers &amp; Handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\MidiInputhandler.h">
+      <Filter>Header Files\Managers &amp; Handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\InputHandler.h">
+      <Filter>Header Files\Managers &amp; Handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\DeltaTime.h">
+      <Filter>Header Files\Managers &amp; Handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\AudioManager.h">
+      <Filter>Header Files\Managers &amp; Handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\KeyboardDrawSystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\KeyboardInformation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\HelperClasses.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\EditableOptions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\FontManager.h">
+      <Filter>Header Files\Managers &amp; Handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Scene_PlayGame.h">
+      <Filter>Header Files\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Scene_Base.h">
+      <Filter>Header Files\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Scene_Select.h">
+      <Filter>Header Files\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\UIButton.h">
+      <Filter>Header Files\Render Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Scene_MidiOptions.h">
+      <Filter>Header Files\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\MidiSequencer.h">
+      <Filter>Header Files\Managers &amp; Handlers</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
